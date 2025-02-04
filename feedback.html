@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        /* Styles for the feedback form */
+#feedbackForm {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#feedbackForm label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#feedbackForm input[type="text"],
+#feedbackForm input[type="email"],
+#feedbackForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#feedbackForm input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#feedbackForm input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Styles for the feedback display section */
+#feedbackDisplay {
+    margin-top: 20px;
+}
+
+#feedbackDisplay .item {
+    margin-bottom: 20px;
+}
+
+#feedbackDisplay .card-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+#feedbackDisplay .card-box .card-text {
+    margin-bottom: 15px;
+}
+
+#feedbackDisplay .card-box .img-wrapper {
+    text-align: center;
+}
+
+#feedbackDisplay .card-box .img-wrapper img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+        /* Add your CSS styles here */
+        /* Styles for the feedback section */
+        .people05 {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.people05 .container {
+    max-width: 1200px;
+}
+
+.people05 .content-head {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.people05 .content-head h3 {
+    font-size: 36px;
+    color: #333;
+}
+
+.people05 .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.people05 .col-12,
+.people05 .col-md-6,
+.people05 .col-lg-4,
+.people05 .col-lg-8 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.people05 form {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.people05 form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.people05 form input[type="text"],
+.people05 form input[type="email"],
+.people05 form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.people05 form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.people05 form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.people05 .content-head h3 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.people05 .col-12,
+.people05 .col-md-6,
+.people05 .col-lg-4,
+.people05 .col-lg-8 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.people05 .card-box {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.people05 .card-box .card-text {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.people05 .card-box .img-wrapper {
+    text-align: center;
+}
+
+.people05 .card-box .img-wrapper img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+
+        /* Add more CSS styles as needed */
+    </style>
+</head>
+<body>
+    <section class="people05" id="testimonials-6-u1Sp6HaxXm">
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-12 mb-0 content-head">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Feedback</strong>
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Feedback Form -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <form id="feedbackForm" onsubmit="saveFeedback(event)">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        
+                        <label for="rating">Rating:</label><br>
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                        <label for="rating1">1</label>
+                        <input type="radio" id="rating2" name="rating" value="2">
+                        <label for="rating2">2</label>
+                        <input type="radio" id="rating2" name="rating" value="3">
+                        <label for="rating3">3</label>
+                        <input type="radio" id="rating2" name="rating" value="4">
+                        <label for="rating4">4</label>
+                        <input type="radio" id="rating3" name="rating" value="5">
+                        <label for="rating5">5</label><br>
+                        
+                        <label for="message">Feedback Message:</label><br>
+                        <textarea id="message" name="message" required></textarea><br>
+                        
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <br>
+                <br>
+                <div class="container">
+                    <div class="row mb-5 justify-content-center">
+                      <div class="col-12 mb-0 content-head">
+                        <h3
+                          class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"
+                        >
+                          <strong>Reviews 🍻</strong>
+                        </h3>
+                      </div>
+                    </div>
+                    </div>
+
+                <!-- Display Feedback Section -->
+                <div id="feedbackDisplay" class="col-12 col-md-6 col-lg-8">
+                    <!-- Feedback will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function saveFeedback(event) {
+            event.preventDefault();
+    
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const rating = document.querySelector('input[name="rating"]:checked').value;
+            const message = document.getElementById('message').value;
+    
+            // Create feedback object
+            const feedback = {
+                name: name,
+                email: email,
+                rating: rating,
+                message: message
+            };
+    
+            // Convert feedback object to JSON string
+            const feedbackJson = JSON.stringify(feedback);
+    
+            // Save feedback to localStorage
+            let feedbacks = localStorage.getItem('feedbacks');
+            feedbacks = feedbacks ? JSON.parse(feedbacks) : [];
+            feedbacks.push(feedbackJson);
+            localStorage.setItem('feedbacks', JSON.stringify(feedbacks));
+    
+            // Display all feedbacks
+            displayFeedbacks();
+    
+            // Clear form fields
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.querySelector('input[name="rating"]:checked').checked = false;
+            document.getElementById('message').value = '';
+        }
+    
+        function displayFeedbacks() {
+            let feedbacks = localStorage.getItem('feedbacks');
+            if (feedbacks) {
+                feedbacks = JSON.parse(feedbacks);
+                const feedbackDisplay = document.getElementById('feedbackDisplay');
+                feedbackDisplay.innerHTML = '';
+    
+                let imageIndex = 100; // Starting index for images
+                feedbacks.forEach((feedbackJson, index) => {
+                    const feedback = JSON.parse(feedbackJson);
+                    const imagePath = `Pics/${imageIndex}.jpg`; // Adjust the path to your local image folder
+                    const cardHtml = `
+                        <div class="item features-without-image col-12 col-md-6 col-lg-4">
+                            <div class="item-wrapper">
+                                <div class="card-box align-left">
+                                    <div class="img-wrapper mt-4 mb-3">
+                                        <img src="${imagePath}" alt="Person ${index + 1}" style="width: 35mm; height: 45mm;">
+                                    </div>
+                                    <p class="card-text mbr-fonts-style display-7">
+                                        ${feedback.message}
+                                    </p>
+                                    <h5 class="card-title mbr-fonts-style display-7">
+                                        <strong>${feedback.name}</strong>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    feedbackDisplay.innerHTML += cardHtml;
+                    imageIndex++;
+                });
+            }
+        }
+    
+        // Display feedbacks when the page loads
+        displayFeedbacks();
+    </script>
+    
+    
+</body>
+</html>
+

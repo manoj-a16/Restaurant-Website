@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Add styles for the video container */
+        .video-container {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        /* Add styles for the video */
+        video {
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .container-fluid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .col {
+            flex-basis: 48%;
+            margin-bottom: 20px;
+        }
+
+        .item-wrapper {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .item-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .item-title img {
+            width: 300px;
+            height: 300px;
+            margin-right: 10px;
+        }
+
+        .item-subtitle {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .item-content {
+            margin-bottom: 20px;
+        }
+
+        .item-footer {
+            text-align: center;
+        }
+
+        .item-btn {
+            background-color: #d9534f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .item-btn:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Video background container -->
+    <div class="video-container">
+        <!-- Replace 'path/to/your/video.mp4' with the actual path to your video file -->
+        <video autoplay loop muted>
+            <source src="blogbackground.mp4" type="video/mp4">
+            <!-- Add other video formats (e.g., WebM, Ogg) as needed -->
+        </video>
+    </div>
+
+    <section class="pricing1">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col content-head">
+                    <div class="mbr-section-head mb-5">
+                        <h4 class="display-2"><strong>Blog</strong></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col item features-without-image">
+                    <div class="item-wrapper">
+                        <div class="item-head">
+                            <h5 class="item-title">
+                                <img src="https://th.bing.com/th/id/OIP.iQsspzFVkMjREvaAfdLBjwHaD4?w=319&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="clubbing">
+                            </h5>
+                            <h5><strong>Disco nights</strong></h5>
+                            <h6 class="item-subtitle">
+                                <strong>15 Jan 2024</strong> 9 pm Onwards
+                            </h6>
+                        </div>
+                        <div class="item-content">
+                            <p>Take a trip back to the 80's and dance the night away. Opening set by Dj Andy.</p>
+                        </div>
+                        <div class="item-footer">
+                            <a href="" class="btn item-btn btn-primary display-7">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col item features-without-image">
+                    <div class="item-wrapper">
+                        <div class="item-head">
+                            <h5 class="item-title">
+                                <img src="https://th.bing.com/th/id/OIP.Pn9-SKFkbuCg708FZ4qVigHaEd?rs=1&pid=ImgDetMain" alt="Trivia Night">
+                                
+                            </h5>
+                            <h5><strong>Movie Themed Trivia Night</strong></h5>
+                            <h6 class="item-subtitle">
+                                <strong>19 May 2024</strong> 9 pm Onwards
+                            </h6>
+                        </div>
+                        <div class="item-content">
+                            <p>Enjoy a fun filled trivia night with all things Bollywood. Do bring a partner along. Winners get free beers!</p>
+                        </div>
+                        <div class="item-footer">
+                            <a href="" class="btn item-btn btn-primary display-7">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col item features-without-image">
+                    <div class="item-wrapper">
+                        <div class="item-head">
+                            <h5 class="item-title">
+                                <img src="https://c.stocksy.com/a/QtIC00/z9/2932564.jpg?1579040723" alt="Mystery Brews">
+                            </h5>
+                            <h5><strong>Mystery Brews</strong></h5>
+                            <h6 class="item-subtitle">
+                                <strong>27 June 2024</strong> 9 pm Onwards
+                            </h6>
+                        </div>
+                        <div class="item-content">
+                            <p>Embrace the mystery and excitement of trying new and unique craft beers with our surprise selection of mystery brews handcrafted by our bartenders.</p>
+                        </div>
+                        <div class="item-footer">
+                            <a href="" class="btn item-btn btn-primary display-7">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="col item features-without-image">
+                    <div class="item-wrapper">
+                        <div class="item-head">
+                            <h5 class="item-title">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI5mXZnGcdbgT6_-FIfU-nCb36QtbeuUAoVQ&usqp=CAU" alt="Open Mic">
+                            </h5>
+                            <h5><strong>Open Mic Night</strong></h5>
+                            <h6 class="item-subtitle">
+                                <strong>15 apr 2024</strong> 9 pm Onwards
+                            </h6>
+                        </div>
+                        <div class="item-content">
+                            <p class="mbr-text mbr-fonts-style display-7">
+                              Sing a song,slam some poetry, share some laughs. Take your talents to the stage.
+                            </p>
+                          </div>
+                        <div class="item-footer">
+                            <a href="" class="btn item-btn btn-primary display-7">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
